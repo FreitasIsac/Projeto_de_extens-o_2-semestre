@@ -1,0 +1,187 @@
+:root {
+
+    --cor-fundo: #121212;
+
+    --cor-container: #1e1e1e;
+
+    --cor-texto-primario: #FFFFFF;
+
+    --cor-texto-secundario: #A7A7A7;
+
+    --cor-acento: #BB86FC;
+
+    --cor-acento-hover: #a56ef1;
+
+}
+
+ 
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+ 
+
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: var(--cor-fundo);
+
+    color: var(--cor-texto-primario);
+
+   
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+
+}
+
+ 
+
+
+
+.container {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    background-color: var(--cor-container);
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+    text-align: center;
+
+}
+
+ 
+
+
+
+.perfil {
+
+    margin-bottom: 30px;
+
+}
+
+ 
+
+.perfil__foto {
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%; 
+
+    border: 3px solid var(--cor-acento);
+
+    object-fit: cover; 
+
+    margin-bottom: 15px;
+
+}
+
+ 
+
+.perfil__texto h1 {
+
+    font-size: 1.8rem;
+
+    margin-bottom: 5px;
+
+}
+
+ 
+
+.perfil__texto p {
+
+    font-size: 1rem;
+
+    color: var(--cor-texto-secundario);
+
+}
+
+ 
+
+
+.links ul {
+
+    list-style: none; 
+
+}
+
+ 
+
+.links li {
+
+    margin-bottom: 15px;
+
+}
+
+ 
+
+.links a {
+
+    display: block;
+
+    background-color: var(--cor-acento);
+
+    color: var(--cor-texto-primario);
+
+    padding: 15px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+   
+}
+
+
+.links a {
+  display: block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+  transform-origin: center;
+  transform: translateZ(0);
+}
+
+
+.links a:hover,
+.links a:focus-visible {
+  transform: scale(1.10); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.22); 
+}
+
+
+.links a:active {
+  transform: scale(1.10);
+  transition: transform 80ms ease;
+}
+
